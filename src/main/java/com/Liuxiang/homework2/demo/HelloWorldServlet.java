@@ -13,9 +13,7 @@ public class HelloWorldServlet  extends HttpServlet {
         PrintWriter writer = response.getWriter();
         writer.println("Name : Liuxiang");
         writer.println("ID : 2022211001000413");
-        writer.println("Data and TimeSun Mar 10 10:01:53 CST 2024");
         LocalDateTime currentDateTime = LocalDateTime.now();
-
         // 创建一个格式器
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
