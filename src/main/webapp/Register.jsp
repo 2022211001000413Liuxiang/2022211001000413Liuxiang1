@@ -10,10 +10,8 @@
 <head>
     <title> Registration Form</title>
     <style>
-        /* Add some basic CSS for error styling */
         .error { color: red; font-size: 0.9em; }
     </style>
-    <!-- 使用正则表达式进行前端邮箱验证 -->
     <script>
         function validateEmail(email) {
             const re = /^[\w.-]+@[\w-]+(\.[\w-]+)+$/;
