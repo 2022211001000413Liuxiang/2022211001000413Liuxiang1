@@ -1,43 +1,56 @@
 <%--
   Created by IntelliJ IDEA.
-  User: lx
-  Date: 2024/3/11
-  Time: 11:22
+  User: 86134
+  Date: 2024/3/10
+  Time: 16:00
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title> Registration Form</title>
+    <title>Title</title>
+
     <style>
-        .error { color: red; font-size: 0.9em; }
+
+        form{
+            margin-left: 50px;
+        }
+
+        .color{
+            background-color: orange;
+            width: 100px;
+            height: 30px;
+            color: white;
+            border-color: orange;
+        }
+
+        input{
+            margin-top:10px;
+        }
+
+        .some{
+            width: 300px;
+            height: 30px;
+        }
     </style>
 
-    </script>
 </head>
 <body>
-<form name="registrationForm" action="register" onsubmit="return validateForm()" method="post">
-    <%--@declare id="gender"--%><label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-    <span class="error" id="usernameError"></span><br>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" minlength="8" required>
-    <span class="error" id="passwordError"></span><br>
+<form method="post" action="register">
 
-    <label for="Email">Email:</label>
-    <input type="text" id="Email" name="Email" required>
-    <span class="error" id="EmailError"></span><br>
+    <h2>New User registration!</h2>
 
-    <label for="Gender">Gender:</label>
-    <input type="radio" name="Gender" value="male" >Male <input type="radio" name="Gender" value="female">Female
-    <br>
+    <input class="some" type="text" placeholder="username" name="username"><br>
+    <input class="some" type="text" placeholder="password" name="password"><br>
+    <input class="some" type="text" placeholder="Email" name="email"><br>
+    <b>Gender</b>
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female<br>
+    <input class="some" type="text" placeholder="Date of Birth(yyyy-mm-dd)" name="birthdate"><br>
 
-    <label for="Birthdate">Birthdate:</label>
-    <input type="text" id="Birthdate" name="Birthdate" pattern="\d{4}-\d{2}-\d{2}" title="Format: yyyy-mm-dd" required>
-    <span class="error" id="BirthdateError"></span><br>
-
-    <input type="submit" value="Submit">
+    <input class="color" type="submit" value="Register">
 </form>
+
 </body>
 </html>
