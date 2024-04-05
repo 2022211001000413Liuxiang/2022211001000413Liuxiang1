@@ -36,11 +36,11 @@ public class RegisterServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         String id1="1";
-        String username1 = "Liuxaing";
+        String username1 = "Liuxiang";
         String password1 = "2022211001000413";
-        String email1 = "3259036747@qq.com";
+        String email1 = "2434@qq.com";
         String gender1 = "male";
-        String birthdate1 = "2005-02-05";
+        String birthdate1 = "2002-04-12";
 
         try {
             PreparedStatement stmt = con.prepareStatement("insert into usertable(id,username,password,email,gender,birthdate)  values(?,?,?,?,?,?)");

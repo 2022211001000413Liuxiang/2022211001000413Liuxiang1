@@ -5,37 +5,7 @@
   Time: 16:00
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-
-    <style>
-
-        form{
-            margin-left: 50px;
-        }
-
-        .color{
-            background-color: orange;
-            width: 100px;
-            height: 30px;
-            color: white;
-            border-color: orange;
-        }
-
-        input{
-            margin-top:10px;
-        }
-
-        .some{
-            width: 300px;
-            height: 30px;
-        }
-    </style>
-
-</head>
-<body>
+<%@include file="header.jsp"%>
 
 <form method="post" action="register">
 
@@ -52,5 +22,4 @@
     <input class="color" type="submit" value="Register">
 </form>
 
-</body>
-</html>
+<%@include file="footer.jsp"%>

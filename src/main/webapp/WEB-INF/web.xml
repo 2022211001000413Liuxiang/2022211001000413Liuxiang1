@@ -46,6 +46,14 @@
         </init-param>
     </servlet>
 
+    <context-param>
+        <param-name>driver1</param-name>
+        <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>url1</param-name>
+        <param-value>jdbc:sqlserver://localhost:1433;DatabaseName=userdb;encrypt=true;trustServerCertificate=true;</param-value>
+    </context-param>
 <context-param>
     <param-name>driver</param-name>
     <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
